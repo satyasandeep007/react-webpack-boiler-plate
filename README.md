@@ -15,15 +15,15 @@ npm run build
 
 ``` bash
 {
-  "name": "react_webpack_starter",
+  "name": "react_webpack_boiler-plate",
   "version": "1.0.0",
-  "description": "Boilerplate for React apps",
+  "description": "Boilerplate for React using WebPack",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "./node_modules/.bin/webpack --mode production"
   },
-  "author": "Satya",
+  "author": "SatyaSandeep",
   "license": "ISC",
   "dependencies": {
     "react": "^16.4.1",
@@ -149,7 +149,7 @@ module.exports = (env, options) => {
                 verbose: true
             }),
             new HtmlWebpackPlugin({
-                template: "./src/index.html"
+                template: "./public/index.html"
             })
         ]
     };
